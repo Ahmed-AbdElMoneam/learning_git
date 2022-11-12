@@ -8,10 +8,18 @@ To chech status and untracked files or edits
 ## git add *
 To add all of your changes to staging area
 
-## git reset head <fileName(with extension)>
+## git reset head (fileName).(with extension)
 To unstage a file from staging Area
 
-## git commit -m "<commitDescription>"
+## git commit -m "(commitDescription)"
 To make a commit
 
+## git branch
+To list all the branches in the project
 
+## git remote -v
+To know the remote name to  be used in push
+
+## git push (remoteName) (branchName)
+### Ex: git push origin master
+To push your commits
