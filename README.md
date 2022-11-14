@@ -8,8 +8,16 @@ To chech status and untracked files or edits
 ## git add *
 To add all of your changes to staging area
 
+# Look there
+
 ## git reset head (fileName).(with extension)
 To unstage a file from staging Area
+
+## git restore --staged (fileName).(with extension)
+To unstage a file from staging Area
+
+## git restore --staged *
+To unstage all files from staging Area
 
 ## git commit -m "(commitDescription)"
 To make a commit
@@ -67,4 +75,78 @@ git remote add origin (URL of the repo)
 git push -u origin master
 ```
 ### -u tells the git to do pull first then do push
+
+# Pull Requests Video
+https://youtu.be/n43bagVuJPU
+
+## git config --global alias.(wantedName) (realName)
+### Ex: git config --global alias.st status
+To set the alias for the command --> git status
+### To use that alias --> git st
+
+## git config --global alias.(wantedName)
+### git config --global alias.st
+To get the real name of an aliased command
+
+## git branch (branchName)
+To create a branch
+
+## git checkout (branchName)
+To switch to that branch
+
+## git branch -d (branchName)
+To delete that branch
+
+## git checkout -b (branchName)
+To create and switch to that branch
+
+## git branch -m (branchName)
+To rename the current branch to that new name
+
+## git merge (branchName)
+### Ex: git merge development
+To merge that development branch to the current branch (master for example)
+
+## git stash
+To save my edits and files(that's in the staging area) to the stash
+
+## git stash pop
+To restore the last stash done that contains my files and edits which was hidden or saved for a future usage. 
+Now that stash isn't in the stash list
+
+## git stash apply
+To restore the last stash done that contains my files and edits which was hidden or saved for a future usage. 
+Now that stash is in the stash list
+
+## git stash list
+To list all my stashes
+
+## git stash save "(message)"
+To save your files and edits with a message or a title
+
+## git stash pop stash@{(idOfStash)}
+To pop a specific stash with its id
+
+## git stash drop
+To delete the last added stash
+
+## git stash drop stash@{(idOfStash)}
+To delete a specific stash with its id
+
+## git stash show
+To show contents of stash
+
+## git stash show stash@{(idOfStash)}
+To show contents of stash
+
+## git stash clear
+To delete alllllllllll the staches
+
+## git clean -n
+To show files you are about to delete
+
+## git clean -f
+To delete these files you have seen with the previous command
+
+
 
